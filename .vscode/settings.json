@@ -1,0 +1,19 @@
+{
+  "kotlin.compiler.jvmTarget": "17",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C:\\tools\\jdk-21",
+      "default": true
+    }
+  ],
+  "files.encoding": "utf8",
+  "files.eol": "\r\n",
+  "editor.formatOnSave": false,
+  "gradle.nestedProjects": true,
+  "gradle.autoDetect": "on",
+  "search.exclude": {
+    "**/build": true,
+    "**/.gradle": true
+  }
+}

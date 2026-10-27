@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle: assembleDebug",
+      "type": "shell",
+      "command": "${workspaceFolder}\\gradlew.bat assembleDebug",
+      "windows": {
+        "command": "${workspaceFolder}\\gradlew.bat assembleDebug"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Gradle: installDebug (adb)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\gradlew.bat installDebug",
+      "problemMatcher": []
+    },
+    {
+      "label": "ADB: reiniciar servidor",
+      "type": "shell",
+      "command": "adb kill-server; adb start-server; adb devices",
+      "problemMatcher": []
+    },
+    {
+      "label": "ADB: instalar APK de debug",
+      "type": "shell",
+      "command": "adb install -r app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "problemMatcher": []
+    },
+    {
+      "label": "DIAG: pré-voo no aparelho",
+      "type": "shell",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\tools\\doctor.ps1\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "DIAG: pré-voo + instalar + logcat",
+      "type": "shell",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\tools\\doctor.ps1\" -Install -Logcat",
+      "problemMatcher": []
+    }
+  ]
+}

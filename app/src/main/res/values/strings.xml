@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScreenTranslate</string>
+    <string name="a11y_label">ScreenTranslate — leitura de tela</string>
+    <string name="a11y_description">Permite que o ScreenTranslate leia o texto exibido por outros aplicativos para traduzi-lo numa sobreposição flutuante. Nenhum dado sai do dispositivo: a tradução é feita localmente pelo ML Kit.</string>
+
+    <string name="capture_notif_title">ScreenTranslate</string>
+    <string name="capture_notif_text">Captura de tela ativa (OCR)</string>
+
+    <string name="overlay_bubble_text">文</string>
+    <string name="overlay_title">Tradução</string>
+</resources>
